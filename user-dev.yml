@@ -5,7 +5,7 @@ spring:   # 服务名称，暂时没有用，讲到SpringCloud服务调用的时
     name: microservice-user
   datasource:
     url: jdbc:mysql://120.29.46.23:3306/springcloud?characterEncoding=UTF8
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
   jpa:
