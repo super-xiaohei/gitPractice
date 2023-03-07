@@ -4,3 +4,13 @@ server:
 spring:
   application:
     name: micservice-movie
+    
+# 修改Ribbon的负载均衡算法
+#microservice-user:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+# 开启Hystrix
+feign:
+  hystrix:
+    enabled: true    
+    
