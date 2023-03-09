@@ -1,6 +1,6 @@
 server:
   port: 9001
-spring:   # 服务名称，暂时没有用，讲到SpringCloud服务调用的时候才会有用。
+spring:
   application:
     name: microservice-user
   zipkin:
