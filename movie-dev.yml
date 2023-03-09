@@ -9,7 +9,7 @@ spring:
       type: web
   sleuth:
     sampler:
-      probability: 1  
+      probability: 1
     
 # 修改Ribbon的负载均衡算法
 #microservice-user:
