@@ -3,6 +3,13 @@ server:
 spring:   # 服务名称，暂时没有用，讲到SpringCloud服务调用的时候才会有用。
   application:
     name: microservice-user
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1  
   datasource:
     url: jdbc:mysql://120.26.49.23:3306/springcloud?characterEncoding=UTF8
     driver-class-name: com.mysql.jdbc.Driver
