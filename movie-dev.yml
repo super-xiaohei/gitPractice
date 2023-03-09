@@ -3,6 +3,13 @@ server:
 spring:
   application:
     name: microservice-movie
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1  
     
 # 修改Ribbon的负载均衡算法
 #microservice-user:
